@@ -8,15 +8,18 @@ export default function NavBar() {
   const router = useRouter();
   return (
     <>
-      <div className="flex w-full bg-[#689F38] h-15 justify-between items-center px-4">
+      <div className="flex w-full bg-[#689F38] h-15 justify-between items-center px-4 shadow-lg">
         <div
           onClick={() => router.push("/")}
-          className="flex justify-center items-center w-10 h-10 cursor-pointer hover:scale-90"
+          className="flex justify-center items-center w-10 h-10 cursor-pointer hover:scale-95"
         >
           <Image src={mainLogo} alt="Main Logo" />
         </div>
 
-        <div className="flex justify-center items-center w-10 h-10 cursor-pointer hover:scale-90">
+        <div
+          onClick={() => router.push("/profile")}
+          className="flex justify-center items-center w-10 h-10 cursor-pointer hover:scale-95"
+        >
           <Image src={profileLogo} alt="Profile Logo" />
         </div>
       </div>
