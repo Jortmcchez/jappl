@@ -69,14 +69,6 @@ export default function GameTile(props: gameProp) {
                 : "opacity-0 translate-y-3 scale-95"
             }`}
           >
-            <button
-              aria-label="Close"
-              onClick={handleClose}
-              className="absolute top-4 right-4 z-20 px-3 py-1 rounded hover:bg-gray-100"
-            >
-              ✕
-            </button>
-
             <div className="flex h-full">
               <div className="w-1/2 bg-[#fff1bb] flex items-center justify-center">
                 {imageSrc ? (
@@ -100,6 +92,15 @@ export default function GameTile(props: gameProp) {
                   {title}
                 </h2>
                 <p className="text-gray-700 text-base">{description}</p>
+                <div className="mt-6">
+                  <button
+                    onClick={() => console.log("Play", title)}
+                    className="inline-flex items-center gap-2 px-5 py-3 bg-[#e30402] text-white font-semibold rounded-lg hover:bg-[#c00302] transition"
+                    aria-label={`Play ${title}`}
+                  >
+                    Play
+                  </button>
+                </div>
               </div>
             </div>
           </div>
