@@ -9,7 +9,7 @@ type Props = {
 const AddFruitForm: React.FC<Props> = ({ addFruit }) => {
   const [fruitName, setFruitName] = useState<string>("");
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (fruitName.trim()) {
       addFruit(fruitName.trim());
