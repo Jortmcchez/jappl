@@ -1,4 +1,3 @@
-"use client";
 import NavBar from "../components/navbar";
 import GameBackdrop from "../components/games/gameBackdrop";
 

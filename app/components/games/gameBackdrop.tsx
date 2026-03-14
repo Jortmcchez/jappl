@@ -5,7 +5,6 @@ export default function GameBackdrop() {
     { id: 1, title: "Game 1" },
     { id: 2, title: "Game 2" },
     { id: 3, title: "Game 3" },
-    { id: 4, title: "Game 4" },
   ];
 
   const gameEntry = games.map((game) => {
