@@ -1,6 +1,6 @@
 "use client";
-import mainLogo from "./pngs/Logo1.png";
-import profileLogo from "./pngs/profile.png";
+import mainLogo from "./assets/Logo1.png";
+import profileLogo from "./assets/profile.png";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 

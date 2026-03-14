@@ -1,6 +1,6 @@
 "use client";
 import NavBar from "../components/navbar";
-import GameBackdrop from "./gameBackdrop";
+import GameBackdrop from "../components/games/gameBackdrop";
 
 export default function Game() {
   return (
